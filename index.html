@@ -35,19 +35,13 @@
 	}).addTo(mymap);
 
 	L.marker([-8.41, -78.75]).addTo(mymap)
-		.bindPopup("<b>Tomaval</b>" 
-			  L.circle([-8.41, -78.75], 500, {
-				color: 'red',
-				fillColor: '#f03',
-				fillOpacity: 0.5
-			 }).addTo(mymap).bindPopup("Tomaval Sight-view");
-			  ).openPopup();
+		.bindPopup("<b>Tomaval</b>").openPopup();
 
-	/*L.circle([-8.41, -78.75], 500, {
+	L.circle([-8.41, -78.75], 500, {
 		color: 'red',
 		fillColor: '#f03',
 		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("Tomaval Sight-view");*/
+	}).addTo(mymap).bindPopup("Tomaval Sight-view");
 
 	L.polygon([
 		[-8.6, -78.75],
