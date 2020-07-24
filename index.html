@@ -34,8 +34,9 @@
 		zoomOffset: -1
 	}).addTo(mymap);
 
+	var photoImg = '<img src="tomovalviewshed12k.jpg" height="498px" width="756px"/>';
 	L.marker([-8.41, -78.75]).addTo(mymap)
-		.bindPopup("<b>Tomaval</b>").openPopup();
+		.bindPopup("<center><b>Tomaval</b> </center>" + photoImg).openPopup();
 
 	/*L.circle([-8.41, -78.75], 500, {
 		color: 'red',
