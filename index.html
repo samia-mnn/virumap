@@ -36,7 +36,9 @@
 
 	var picURL2 = 'tomavalviewshed12k.JPG';
 	L.marker([-8.41, -78.75]).addTo(mymap)
-		.bindPopup("<center><b>Tomaval</b> </center>" + "<img src='" + picURL2 + "'/>").openPopup();
+		.bindPopup("<center><b>Tomaval</b> </center>" + "<img src='" + picURL2 + "'/>", {
+			maxWidth: 560
+		}).openPopup();
 
 	/*L.circle([-8.41, -78.75], 500, {
 		color: 'red',
@@ -44,11 +46,11 @@
 		fillOpacity: 0.5
 	}).addTo(mymap).bindPopup("Tomaval Sight-view");*/
 
-	L.polygon([
+	/*L.polygon([
 		[-8.6, -78.75],
 		[-8.8, -79.75],
 		[-8.41, -80.75]
-	]).addTo(mymap).bindPopup("I am a polygon.");
+	]).addTo(mymap).bindPopup("I am a polygon.");/*
 
 	/*var imageUrl = '12kshed.png',
         imageBounds = [[-8.40, -78.74], [-8.42, -78.76]];
