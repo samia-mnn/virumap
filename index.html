@@ -37,11 +37,11 @@
 	L.marker([-8.41, -78.75]).addTo(mymap)
 		.bindPopup("<b>Tomaval</b>").openPopup();
 
-	L.circle([-8.41, -78.75], 500, {
+	/*L.circle([-8.41, -78.75], 500, {
 		color: 'red',
 		fillColor: '#f03',
 		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("Tomaval Sight-view");
+	}).addTo(mymap).bindPopup("Tomaval Sight-view");*/
 
 	L.polygon([
 		[-8.6, -78.75],
@@ -49,10 +49,10 @@
 		[-8.41, -80.75]
 	]).addTo(mymap).bindPopup("I am a polygon.");
 
-	/*var imageUrl = '12kshed.png',
+	var imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sydney_Opera_House_-_Dec_2008.jpg/1024px-Sydney_Opera_House_-_Dec_2008.jpg',
         imageBounds = [[-8.42, -78.76], [-8.40, -78.74]];
         var overlay = L.imageOverlay(imageUrl, imageBounds);
-	overlay.addTo(map);*/
+	overlay.addTo(map);
 	var popup = L.popup();
 
 	function onMapClick(e) {
