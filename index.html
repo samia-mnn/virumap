@@ -15,11 +15,12 @@
 <style>
 body {font-family: Arial;}
 .vertical-menu {
+  float: right;
   width: 200px;
 }
 
 .vertical-menu a {
-  float: right;
+
   background-color: #eee;
   color: black;
   display: block;
@@ -41,7 +42,7 @@ body {font-family: Arial;}
 
 
 
-<div id="mapid" style="width: 1000px; height: 600px;"></div>
+<div id="mapid" style="width: 1000px; height: 600px; float: right;"></div>
 <script>
 
 	var mymap = L.map('mapid').setView([-8.41, -78.75], 8);
