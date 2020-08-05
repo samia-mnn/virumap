@@ -16,7 +16,7 @@
 body {font-family: Arial;}
 .vertical-menu {
   float: right;
-  width: 200px;
+  width: 350px;
 }
 
 .vertical-menu a {
@@ -33,7 +33,7 @@ body {font-family: Arial;}
 }
 
 .vertical-menu a.active {
-  background-color: #C9E2EC;
+  background-color: #EBBE3C;
   color: white;
 }
 </style>
@@ -57,30 +57,13 @@ body {font-family: Arial;}
 		zoomOffset: -1
 	}).addTo(mymap);
 
-	var picURL2 = 'tomavalviewshed12k.JPG';
+	//var picURL2 = 'tomavalviewshed12k.JPG';
 	L.marker([-8.41, -78.75]).addTo(mymap)
-		.bindPopup("<center><b>Tomaval</b> </center>" + "<img src='" + picURL2 + "'/>", {
+		.bindPopup("<center><b>Tomaval</b> </center>" + "<p> Let's put a small introduction to Tomoval here </p>", {
 			maxWidth: 560
 		});
 
-	/*L.circle([-8.41, -78.75], 500, {
-		color: 'red',
-		fillColor: '#f03',
-		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("Tomaval Sight-view");*/
-
-	/*L.polygon([
-		[-8.6, -78.75],
-		[-8.8, -79.75],
-		[-8.41, -80.75]
-	]).addTo(mymap).bindPopup("I am a polygon.");/*
-
-	/*var imageUrl = '12kshed.png',
-        imageBounds = [[-8.40, -78.74], [-8.42, -78.76]];
-        var overlay = L.imageOverlay(imageUrl, imageBounds);
-	overlay.addTo(map);
-	var popup = L.popup();*/
-
+	
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
@@ -94,7 +77,7 @@ body {font-family: Arial;}
 </script>
 <div class="vertical-menu">
   <a href="#" class="active">Home</a>
-  <a href="https://earth.google.com/web/@-8.41928786,-78.81492453,45.12828541a,14718.61253353d,30.00000005y,0h,0t,0r/data=MicKJQojCiExSDZYa3JkbXRYTG5nbXFjTGN1aVRvX3hEbUxVeV9NMWU">Google Earth</a>
+  <a href="https://earth.google.com/web/@-8.42379978,-78.81913919,44.09290805a,32728.90931028d,30y,0h,0t,0r/data=MicKJQojCiExSDZYa3JkbXRYTG5nbXFjTGN1aVRvX3hEbUxVeV9NMWU">Google Earth</a>
   <a href="#">Link 2</a>
   <a href="#">Link 3</a>
   <a href="#">Link 4</a>
