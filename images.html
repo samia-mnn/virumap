@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial;}
+body {font-family: Optima, Arial;}
 .vertical-menu {
   float: right;
   width: 350px;
@@ -29,7 +29,7 @@ body {font-family: Arial;}
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc;
+  background-color: #EBBE3C;
 }
 
 .vertical-menu a.active {
@@ -57,9 +57,9 @@ body {font-family: Arial;}
 		zoomOffset: -1
 	}).addTo(mymap);
 
-	//var picURL2 = 'tomavalviewshed12k.JPG';
+	var fonttime = 'font-family:optima,arial,helvetica;';
 	L.marker([-8.41, -78.75]).addTo(mymap)
-		.bindPopup("<center><b>Tomaval</b> </center>" + "<p> Let's put a small introduction to Tomoval here </p>", {
+		.bindPopup("<center><b>Tomaval</b> </center>" + "<p style = " + fonttime + "> Click below to view the Tomaval image gallery. </p>", {
 			maxWidth: 560
 		});
 
@@ -82,6 +82,8 @@ body {font-family: Arial;}
   <a href="#">Link 3</a>
   <a href="#">Link 4</a>
 </div>
-
+<p style = "font-family:optima,arial,helvetica;">
+Write your text here
+</p>
 </body>
 </html>
