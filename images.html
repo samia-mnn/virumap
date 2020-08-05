@@ -58,8 +58,69 @@ body {font-family: Optima, Arial;}
 	}).addTo(mymap);
 
 	var fonttime = 'font-family:optima,arial,helvetica;';
+	var viewImageString = '
+<head>
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+  <a href="#" class="icon" title="User Profile">
+    <i class="fa fa-user"></i>
+  </a>
+  </div>
+</div>
+</body>'
 	L.marker([-8.41, -78.75]).addTo(mymap)
-		.bindPopup("<center><b>Tomaval</b> </center>" + "<p style = " + fonttime + "> Click below to view the Tomaval image gallery. </p>", {
+		.bindPopup("<center><b>Tomaval</b> </center>" + "<p style = " + fonttime + "> Click below to view the Tomaval image gallery. </p>" +viewImageString, {
 			maxWidth: 560
 		});
 
