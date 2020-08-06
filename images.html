@@ -58,8 +58,9 @@ body {font-family: Arial; background-image: url("Viru-023.jpg");}
 	}).addTo(mymap);
 
 	var picURL2 = 'view-images-tomaval.JPG';
+	var myLink = 'tomaval-images.html';
 	L.marker([-8.41, -78.75]).addTo(mymap)
-		.bindPopup("<img src =" + picURL2 + "/>", {
+		.bindPopup("<a href = " + myLink + "><img src =" + picURL2 + "/> </a>", {
 			maxWidth: 560
 		});
 
