@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Optima, Arial;}
+body {font-family: Arial; background-image: url("Viru-023.jpg");}
 .vertical-menu {
   float: right;
   width: 350px;
@@ -40,7 +40,7 @@ body {font-family: Optima, Arial;}
 </head>
 <body>
 
-<img src = "header.JPG" />
+<img src = "virup.png" width "1280" height "200" />
 
 <div id="mapid" style="width: 1000px; height: 600px; float: left;"></div>
 <script>
@@ -57,10 +57,9 @@ body {font-family: Optima, Arial;}
 		zoomOffset: -1
 	}).addTo(mymap);
 
-	var fonttime = 'font-family:optima,arial,helvetica;';
-
+	var picURL2 = 'view-images-tomaval.JPG';
 	L.marker([-8.41, -78.75]).addTo(mymap)
-		.bindPopup("<center><b>Tomaval</b> </center>" + "<p style = " + fonttime + "> Click below to view the Tomaval image gallery. </p>"  {
+		.bindPopup("<img src =" + picURL2 + "/>", {
 			maxWidth: 560
 		});
 
@@ -79,12 +78,11 @@ body {font-family: Optima, Arial;}
 <div class="vertical-menu">
   <a href="index.html">Home</a>
   <a href="https://earth.google.com/web/@-8.42379978,-78.81913919,44.09290805a,32728.90931028d,30y,0h,0t,0r/data=MicKJQojCiExSDZYa3JkbXRYTG5nbXFjTGN1aVRvX3hEbUxVeV9NMWU">Google Earth</a>
-  <a href="#" class="current">Images</a>
-  <a href="#">Link 3</a>
-  <a href="#">Link 4</a>
+  <a href="images.html" class = "active">Images</a>
+  <a href="#">Publications</a>
+  <a href="#">Artifacts</a>
+  <a href="#">Viewsheds</a>
 </div>
-<p style = "font-family:optima,arial,helvetica;">
-Write your text here
-</p>
+
 </body>
 </html>
