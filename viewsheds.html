@@ -62,6 +62,21 @@ body {font-family: Arial; background-image: url("Viru-023.jpg");}
 </form>
 	
 </div>
+<?php
+
+$name = $_GET['color'];
+
+if (isset($_GET['color'])) {
+    echo "You chose the following color(s): <br>";
+
+    foreach ($name as $color){
+        echo $color."<br />"; //do an img src and name all the images after the value.
+    }
+} else {
+    echo "You did not choose a color.";
+}
+
+?>
 
 </body>
 </html>
