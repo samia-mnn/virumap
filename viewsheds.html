@@ -51,6 +51,21 @@ body {font-family: Arial; background-image: url("Viru-023.jpg");}
   <a href="#">Artifacts</a>
   <a href="#" class = "active">Viewsheds</a>
 </div>
+	
+<div id="chooseSheds" style="width: 500px; height: 600px; float: right;">
+<p> Please choose the viewsheds you would like to see </b>
+<form action="third.php" method="get">
+    Red<input type="checkbox" name="color[]" id="color" value="red">
+    Green<input type="checkbox" name="color[]" id="color" value="green">
+    Blue<input type="checkbox" name="color[]" id="color" value="blue">
+    Cyan<input type="checkbox" name="color[]" id="color" value="cyan">
+    Magenta<input type="checkbox" name="color[]" id="color" value="Magenta">
+    Yellow<input type="checkbox" name="color[]" id="color" value="yellow">
+    Black<input type="checkbox" name="color[]" id="color" value="black">
+    <input type="submit" value="submit">
+</form>
+	
+</div>
 
 </body>
 </html>
