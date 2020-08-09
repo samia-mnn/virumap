@@ -66,7 +66,7 @@ body {font-family: Arial; background-image: url("Viru-023.jpg");}
 <script>
 var showTomaval;
 var showCemetery;
-</script>
+
 	
 </head>
 <body>
@@ -76,7 +76,15 @@ var showCemetery;
 <div id="viewMap" style="width: 1000px; height: 600px; float: left;">
 
 <img src = "Satellite Same Map.png" class="satellite" />
-<img src = "castToma.png" class = "overlay" />
+
+<p id="overlay"></p>
+function showToma(){
+	var toma = 'castToma.png';
+	var overlay = 'overlay';
+	document.getElementById("overlay").innerHTML = "<img src" + toma + "class =" + overlay "/>";
+</script>
+	
+//<img src = "castToma.png" class = "overlay" />
 
 
 
@@ -93,7 +101,7 @@ var showCemetery;
 	
 <div id="chooseSheds" style="width: 350px; height: 600px; float: right;">
 
-<p><button class="button">Castillo de Tomaval</button></p>
+<p><button class="button" onclick ="showToma()">Castillo de Tomaval</button></p>
 <p><button class="button button2">Cemetery Near Puerto Moorin</button></p>
 <p><button class="button button3">Red</button></p>
 <p><button class="button button4">Gray</button></p>
