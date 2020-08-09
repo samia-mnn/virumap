@@ -28,6 +28,23 @@ body {font-family: Arial; background-image: url("Viru-023.jpg");}
 .vertical-menu a.active {
   background-color: #EBBE3C;
   color: white;
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
 }
 </style>
 </head>
@@ -53,30 +70,17 @@ body {font-family: Arial; background-image: url("Viru-023.jpg");}
 </div>
 	
 <div id="chooseSheds" style="width: 350px; height: 600px; float: right;">
-<p> Please choose the viewsheds you would like to see </b>
-<form action="third.php" method="get">
-    <p>  Tomaval<input type="checkbox" name="color[]" id="color" value="Tomaval"> </p>
-    <p>  Cemetery near Puerto Moorin<input type="checkbox" name="color[]" id="color" value="Cemetery near Puerto Moorin"> </p>
 
-    <input type="submit" value="Submit">
-</form>
+<p><button class="button">Castillo de Tomaval</button></p>
+<p><button class="button button2">Cemetery Near Puerto Moorin</button></p>
+<p><button class="button button3">Red</button></p>
+<p><button class="button button4">Gray</button></p>
+<p><button class="button button5">Black</button></p>
 	
 </div>
-<?php
 
-$name = $_GET['color'];
 
-if (isset($_GET['color'])) {
-    echo "You chose the following color(s): <br>";
 
-    foreach ($name as $color){
-        echo $color."<br />"; //do an img src and name all the images after the value.
-    }
-} else {
-    echo "You did not choose a color.";
-}
-
-?>
 
 </body>
 </html>
